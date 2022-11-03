@@ -41,6 +41,9 @@ main {
     height: 100%;
     padding: 1rem 2rem;
 }
+.form-section > h2 {
+    margin-bottom: 1.5rem;
+}
 
 .logo-container {
   width: 27vw;
@@ -80,7 +83,25 @@ main {
 }
 
 label, input {
-    width: 150px;
+    width: 250px;
+}
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(20, 20, 20);
+
+}
+input {
+    padding: .5rem;
+    border-radius: 5px;
+}
+input:optional {
+    border: solid 1px grey;
+}
+input:invalid {
+    border: solid 1px red;
 }
 .form-field {
     display: flex;
@@ -88,5 +109,10 @@ label, input {
 }
 .form-row {
     display: flex;
-    gap: 4ch;
+    gap: 8ch;
+    margin-bottom: 1rem;
+}
+button {
+    background-color: #042d6b;
+    color: white;
 }
