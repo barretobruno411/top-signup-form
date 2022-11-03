@@ -31,56 +31,77 @@
       </div>
     </div>
     <main>
-      <h2>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
-        voluptatum atque? Est vitae quibusdam consectetur voluptas aperiam
-        labore nobis expedita, debitis cum? Laborum praesentium maiores modi
-        tempora velit incidunt quisquam!
-      </h2>
-      <h3>You want to know!</h3>
+      <div class="copy-container">
+        <h2>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
+          voluptatum atque? Est vitae quibusdam consectetur voluptas aperiam
+          labore nobis expedita, debitis cum? Laborum praesentium maiores modi
+          tempora velit incidunt quisquam!
+        </h2>
+        <h3>You want to know!</h3>
+      </div>
       <form action="#">
-        <section>
+        <section class="form-section">
           <h2>Let's do this!</h2>
           <div class="form-row">
-            <label for="given-name">First name</label>
-            <input
-              type="text"
-              id="given-name"
-              name="given-name"
-              autocomplete="given-name"
-            />
-            <label for="family-name">Last name</label>
-            <input
-              type="text"
-              id="family-name"
-              name="family-name"
-              autocomplete="family-name"
-            />
+            <div class="form-field">
+              <label for="given-name">First name</label>
+              <input
+                type="text"
+                id="given-name"
+                name="given-name"
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="form-field">
+              <label for="family-name">Last name</label>
+              <input
+                type="text"
+                id="family-name"
+                name="family-name"
+                autocomplete="family-name"
+              />
+            </div>
           </div>
           <div class="form-row">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" autocomplete="email" />
-            <label for="tel">Phone number</label>
-            <input type="tel" name="tel" id="tel" autocomplete="tel" />
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-field">
+              <label for="tel">Phone number</label>
+              <input type="tel" name="tel" id="tel" autocomplete="tel" />
+            </div>
           </div>
           <div class="form-row">
-            <label for="new-password">Password</label>
-            <input
-              type="password"
-              name="new-password"
-              id="new-password"
-              autocomplete="new-password"
-            />
-            <label for="confirm-password">Confirm password</label>
-            <input
-              type="password"
-              name="confirm-password"
-              id="confirm-password"
-            />
+            <div class="form-field">
+              <label for="new-password">Password</label>
+              <input
+                type="password"
+                name="new-password"
+                id="new-password"
+                autocomplete="new-password"
+              />
+            </div>
+            <div class="form-field">
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+              />
+            </div>
           </div>
         </section>
-        <button>Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <div class="submit-row">
+          <button>Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
       </form>
     </main>
   </body>
