@@ -1,5 +1,6 @@
 :root {
   --background-img-content-color: rgba(0, 0, 0, 0.5);
+  --secondary-color: #042d6b;
 }
 * {
   margin: 0;
@@ -24,25 +25,25 @@ main {
 }
 
 .copy-container {
-    padding: 2rem;
+  padding: 2rem;
 }
 .copy-container > h2 {
-    width: min(50vw, 45ch);
-    margin-top: 12vh;
-    font-size: 1.5rem;
+  width: min(50vw, 45ch);
+  margin-top: 12vh;
+  font-size: 1.5rem;
 }
 .copy-container > h3 {
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 .form-section {
-    background-color: white;
-    box-shadow: 0 5px 10px 0 rgba(5, 5, 5, 0.2);
-    height: 100%;
-    padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 5px 10px 0 rgba(5, 5, 5, 0.2);
+  /* height: 100%; */
+  padding: 1rem 2rem;
 }
 .form-section > h2 {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .logo-container {
@@ -82,37 +83,60 @@ main {
   color: white;
 }
 
-label, input {
-    width: 250px;
+label,
+input {
+  width: 250px;
 }
 label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: rgb(20, 20, 20);
-
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(20, 20, 20);
 }
 input {
-    padding: .5rem;
-    border-radius: 5px;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 input:optional {
-    border: solid 1px grey;
+  border: solid 1px grey;
 }
 input:invalid {
-    border: solid 1px red;
+  border: solid 1px red;
+}
+input:focus {
+  outline: blue solid 1px;
 }
 .form-field {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .form-row {
-    display: flex;
-    gap: 8ch;
-    margin-bottom: 1rem;
+  display: flex;
+  gap: 8ch;
+  margin-bottom: 1rem;
+}
+.submit-row {
+  margin: 2rem 4rem;
 }
 button {
-    background-color: #042d6b;
-    color: white;
+  background-color: var(--secondary-color);
+  color: white;
+  width: 250px;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px rgb(167, 165, 165);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+div.submit-row > p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+div.submit-row > p > a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
